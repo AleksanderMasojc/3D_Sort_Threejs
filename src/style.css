@@ -1,0 +1,99 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+html,
+body
+{
+    overflow: hidden;
+}
+
+.webgl
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    outline: none;
+}
+
+.options{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 270px;
+    height: 180px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+    background-color: rgb(124, 33, 160);
+    color: white;
+}
+.options section, span, input{
+    margin-bottom: 18px;
+}
+.options section{
+    display: flex;
+    justify-content: space-between;
+    width: 115px;
+    margin-bottom: 4px;
+}
+.options section button{
+    padding: 4px 6px;
+    outline-width: 0px;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Input style */
+input[type=range] {
+    height: 24px;
+    -webkit-appearance: none;
+    width: 120px;
+    background: none;
+  }
+  input[type=range]:focus {
+    outline: none;
+  }
+  input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 4px;
+    cursor: pointer;
+    background: #C4C4C4;
+    border-radius: 2px;
+    
+  }
+  input[type=range]::-webkit-slider-thumb {
+    height: 16px;
+    width: 16px;
+    border-radius: 16px;
+    background: #686868;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -7px;
+  }
+.hide{
+    display: none;
+}
+button:hover{
+    background: #e2e2e2d8;
+    cursor: pointer;
+}
+header{
+    position: absolute;
+    top: 45px;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(124, 33, 160);
+    font-size: 74px;
+    font-weight: 600;
+}
