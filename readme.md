@@ -1,6 +1,6 @@
 # Setup
 
-Run this followed commands:
+Run this commands:
 
 ``` bash
 # Install dependencies
