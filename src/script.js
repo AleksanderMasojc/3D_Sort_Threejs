@@ -21,10 +21,6 @@ const sizes = {
 const camera = new THREE.PerspectiveCamera(65, sizes.width / sizes.height, 0.1, 100)
 scene.add(camera)
 
-// const light = new THREE.PointLight( 0x00ff00, .2, 100 );
-// light.position.set( 0, 2, 2 );
-// scene.add( light );
-
 // Controls
 const controls = new OrbitControls(camera, canvas)
 controls.enableDamping = true
@@ -59,8 +55,6 @@ function createBoxes(number)
     camera.position.x = (number*2-1)/2-0.5
     controls.target.set((number*2-1)/2-0.5, 0, 0);
     camera.position.z = number
-    // console.log(Boxes)
-    // console.log(camera.position.x)
 }
 
 let boxNr = document.getElementById('nr')
@@ -162,12 +156,9 @@ renderer.setSize(sizes.width, sizes.height)
 renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
 
 // Animate
-//const clock = new THREE.Clock()
 
 const tick = () =>
 {
-    //const elapsedTime = clock.getElapsedTime()
-
     // Update controls
     controls.update()
 
